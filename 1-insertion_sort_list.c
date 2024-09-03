@@ -16,7 +16,7 @@ void insertion_sort_list(listint_t **list)
 	while (current)
 	{
 		temp = current;
-		while(temp->prev && temp->prev->n > temp->n)
+		while (temp->prev && temp->prev->n > temp->n)
 		{
 			swap_nodes(list, temp->prev, temp);
 			print_list(*list);
